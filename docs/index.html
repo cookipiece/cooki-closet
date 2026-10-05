@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'self'">
+  <title>쿠키옷장</title>
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="catalogue-data.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header>
+    <a href="./" class="brand">쿠키옷장<span aria-hidden="true">.</span></a>
+    <form id="filters" action="./" method="get" role="search">
+      <label for="search" class="search-label">검색</label>
+      <input id="search" name="q" type="search" placeholder="옷 이름, 번호" autocomplete="off" enterkeyhint="search">
+      <label for="category" class="sr-only">종류</label>
+      <select id="category" name="category"><option value="all">전체</option><option value="의상·혼합">의상</option><option value="속옷·소품">속옷·소품</option></select>
+      <label for="mood" class="sr-only">분위기</label><select id="mood" name="mood" hidden><option value="all">모든 분위기</option></select>
+    </form>
+  </header>
+  <main><h1 class="sr-only">쿠키옷장 의상 목록</h1><div id="grid" class="grid"></div><p id="empty" hidden>검색 결과가 없어요.</p><button id="more" type="button" class="more" hidden>더 보기</button><p id="result-count" role="status" aria-live="polite" class="sr-only"></p></main>
+  <noscript>JavaScript를 켜면 옷 목록을 볼 수 있어요.</noscript>
+  <dialog id="detail" aria-labelledby="detail-name">
+    <button id="close-detail" class="close" type="button" aria-label="닫기">×</button>
+    <div class="detail-layout"><div class="detail-gallery"><div id="detail-photo"></div><div class="views" role="group" aria-label="촬영 방향"><button type="button" data-view="front">정면</button><button type="button" data-view="threeQuarter">사선</button><button type="button" data-view="back">뒷면</button></div></div>
+      <div class="detail-copy"><p id="detail-id" class="id"></p><h2 id="detail-name"></h2><div id="detail-moods" class="moods"></div><div class="request"><label for="target-slot">넣을 슬롯</label><select id="target-slot"></select><label for="request-text" class="sr-only">이식 요청 문구</label><textarea id="request-text" rows="3" readonly></textarea><button id="copy-request" class="primary" type="button">요청 문구 복사</button><p id="copy-status" role="status" aria-live="polite"></p></div></div>
+    </div>
+  </dialog>
+</body>
+</html>
