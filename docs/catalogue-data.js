@@ -5,7 +5,7 @@ window.MILLTINA_CATALOGUE = {
   "entries": [
     {
       "id": "W0001",
-      "name": "밀티나 기본",
+      "name": "기본 메이드 드레스",
       "moods": [
         "러블리",
         "클래식"
@@ -65,7 +65,7 @@ window.MILLTINA_CATALOGUE = {
     },
     {
       "id": "W0004",
-      "name": "murasakiya Milltina maid ",
+      "name": "MURASAKIYA Maid",
       "moods": [
         "고딕",
         "클래식"
@@ -443,7 +443,7 @@ window.MILLTINA_CATALOGUE = {
     },
     {
       "id": "W0023",
-      "name": "Velvet_Cat_Miltina",
+      "name": "Velvet Cat",
       "moods": [
         "러블리",
         "판타지"
@@ -720,7 +720,7 @@ window.MILLTINA_CATALOGUE = {
     },
     {
       "id": "W0037",
-      "name": "風紀委員_Milltina((No bra)Breasts_Cow) (1)",
+      "name": "風紀委員",
       "moods": [
         "프레피",
         "클래식"
@@ -959,7 +959,7 @@ window.MILLTINA_CATALOGUE = {
     },
     {
       "id": "W0049",
-      "name": "Brown",
+      "name": "Stella Marshal",
       "moods": [
         "판타지",
         "클래식"
@@ -1018,7 +1018,7 @@ window.MILLTINA_CATALOGUE = {
     },
     {
       "id": "W0052",
-      "name": "Cow China_milltina",
+      "name": "Cow China",
       "moods": [
         "전통풍",
         "판타지"
@@ -1118,7 +1118,7 @@ window.MILLTINA_CATALOGUE = {
     },
     {
       "id": "W0057",
-      "name": "OS_Milltina",
+      "name": "타월 드레스 세트",
       "moods": [
         "홈웨어",
         "러블리"
@@ -1158,7 +1158,7 @@ window.MILLTINA_CATALOGUE = {
     },
     {
       "id": "W0059",
-      "name": "MarineKiss _Milltina Big 3",
+      "name": "MarineKiss",
       "moods": [
         "프레피",
         "러블리"
@@ -1337,7 +1337,7 @@ window.MILLTINA_CATALOGUE = {
     },
     {
       "id": "W0068",
-      "name": "Monya_Bikini2_Milltina (1)",
+      "name": "Monya Bikini 2",
       "moods": [
         "홈웨어",
         "시크"
@@ -1610,7 +1610,7 @@ window.MILLTINA_CATALOGUE = {
     },
     {
       "id": "W0082",
-      "name": "Milltina_white01",
+      "name": "붕대 의상 + すけべおばけ",
       "moods": [
         "판타지",
         "미스터리"
@@ -1669,7 +1669,7 @@ window.MILLTINA_CATALOGUE = {
     },
     {
       "id": "W0085",
-      "name": "1",
+      "name": "Lilia Mare + Snow Pom Cape",
       "moods": [
         "윈터",
         "러블리"
@@ -1709,7 +1709,7 @@ window.MILLTINA_CATALOGUE = {
     },
     {
       "id": "W0087",
-      "name": "Devil Cadet Milltina",
+      "name": "Devil Cadet",
       "moods": [
         "고딕",
         "판타지"
@@ -1948,7 +1948,7 @@ window.MILLTINA_CATALOGUE = {
     },
     {
       "id": "W0099",
-      "name": "Milltina_Holier_Magical_COW",
+      "name": "Holier Magical",
       "moods": [
         "러블리",
         "판타지"
@@ -3257,7 +3257,7 @@ window.MILLTINA_CATALOGUE = {
     },
     {
       "id": "W0197",
-      "name": "ER2",
+      "name": "별 장식 드롭 귀걸이",
       "moods": [
         "러블리",
         "판타지"

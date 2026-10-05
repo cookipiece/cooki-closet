@@ -8,9 +8,10 @@
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'self'">
   <title>쿠키옷장</title>
   <link rel="icon" href="icon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="style.css">
-  <script defer src="catalogue-data.js"></script>
-  <script defer src="app.js"></script>
+  <link rel="stylesheet" href="style.css?v=20261005-parts2">
+  <script defer src="catalogue-data.js?v=20261005-names2"></script>
+  <script defer src="parts-data.js?v=20261005-parts2"></script>
+  <script defer src="app.js?v=20261005-parts2"></script>
 </head>
 <body>
   <header>
@@ -25,10 +26,11 @@
   </header>
   <main><h1 class="sr-only">쿠키옷장 의상 목록</h1><div id="grid" class="grid"></div><p id="empty" hidden>검색 결과가 없어요.</p><button id="more" type="button" class="more" hidden>더 보기</button><p id="result-count" role="status" aria-live="polite" class="sr-only"></p></main>
   <noscript>JavaScript를 켜면 옷 목록을 볼 수 있어요.</noscript>
+  <button class="request-toggle request-toggle-page" type="button" data-request-toggle aria-label="요청 도구 표시" aria-controls="request-controls" aria-pressed="false" title="요청 도구 표시"><span aria-hidden="true">⚙</span></button>
   <dialog id="detail" aria-labelledby="detail-name">
     <button id="close-detail" class="close" type="button" aria-label="닫기">×</button>
     <div class="detail-layout"><div class="detail-gallery"><div id="detail-photo"></div><div class="views" role="group" aria-label="촬영 방향"><button type="button" data-view="front">정면</button><button type="button" data-view="threeQuarter">사선</button><button type="button" data-view="back">뒷면</button></div></div>
-      <div class="detail-copy"><p id="detail-id" class="id"></p><h2 id="detail-name"></h2><div id="detail-moods" class="moods"></div><div class="request"><label for="target-slot">넣을 슬롯</label><select id="target-slot"></select><label for="request-text" class="sr-only">이식 요청 문구</label><textarea id="request-text" rows="3" readonly></textarea><button id="copy-request" class="primary" type="button">요청 문구 복사</button><p id="copy-status" role="status" aria-live="polite"></p></div></div>
+      <div class="detail-copy"><p id="detail-id" class="id"></p><h2 id="detail-name"></h2><div id="detail-moods" class="moods"></div><div id="detail-parts" class="parts" role="group" aria-label="의상 파츠" hidden></div><div id="request-controls" class="request" hidden><label for="target-slot">넣을 슬롯</label><select id="target-slot"></select><label for="request-text" class="sr-only">이식 요청 문구</label><textarea id="request-text" rows="3" readonly></textarea><button id="copy-request" class="primary" type="button">요청 문구 복사</button><p id="copy-status" role="status" aria-live="polite"></p></div><div class="detail-tools"><button class="request-toggle" type="button" data-request-toggle aria-label="요청 도구 표시" aria-controls="request-controls" aria-pressed="false" title="요청 도구 표시"><span aria-hidden="true">⚙</span></button></div></div>
     </div>
   </dialog>
 </body>
