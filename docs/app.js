@@ -3,7 +3,9 @@
   const data=window.MILLTINA_CATALOGUE;
   const $=id=>document.getElementById(id);
   if(!data||data.schema!=='milltina-web-catalogue-v1'){$('empty').hidden=false;$('empty').textContent='목록을 읽지 못했어요.';return;}
-  const entries=[...data.entries].sort((a,b)=>Number(Object.keys(b.photos||{}).length>0)-Number(Object.keys(a.photos||{}).length>0)), byId=new Map(entries.map(e=>[e.id,e]));
+  // Hide the parts-only Preppy Look record; retain the complete outfit W0027.
+  const hiddenIds=new Set(['W0205']);
+  const entries=data.entries.filter(e=>!hiddenIds.has(e.id)).sort((a,b)=>Number(Object.keys(b.photos||{}).length>0)-Number(Object.keys(a.photos||{}).length>0)), byId=new Map(entries.map(e=>[e.id,e]));
   const views={front:'정면',threeQuarter:'사선',back:'뒷면'};
   let limit=30,selected=null,selectedView='front',lastTrigger=null;
   const el=(tag,className,text)=>{const n=document.createElement(tag);if(className)n.className=className;if(text!==undefined)n.textContent=text;return n;};
