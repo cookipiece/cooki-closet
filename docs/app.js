@@ -32,7 +32,7 @@
     const src=(part||entry).photos?.[view];
     const base='photos/'+entry.id+'/',file=viewFiles[view];
     if(part)return /^P(?:\d{3}|[0-9a-f]{12})$/.test(part.id)&&src===base+'parts/'+part.id+'/'+file+'.webp'?src:'';
-    return ['webp','png','jpg'].some(ext=>src===base+file+'.'+ext)?src:'';
+    return ['webp','png','jpg'].some(ext=>src===base+file+'.'+ext)?src+'?v=20261006-fullparts':'';
   }
   function partsFor(entry){
     const parts=partsData?.schema==='cooki-wardrobe-parts-v1'?partsData.entries?.[entry.id]:null;
